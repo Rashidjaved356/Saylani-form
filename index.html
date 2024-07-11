@@ -1,59 +1,154 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Student Registration Form</title>
 </head>
 <body>
-    <form method="">
-        User Name
-        <input type="password" name="user name" id="" required>
-        <br>
-        <input type="submit" name="submit" id="">
-        <br>
-        <textarea name="" id="" cols="10" rows="4" required>
-        </textarea>
-        <br>
-        <br>
-        Mail
-        <input type="radio" name="city" id="">
-        karachi
-        <input type="radio" name="city 1" id="">
-        pakistan
-        <input type="radio" name="city 2" id="">
-        <br>
-        <br>
-        karachi
-        <input type="checkbox" name="karachi">
-        Matric
-        <input type="checkbox" name="Matric">
-        inter
-        <input type="checkbox" name="inter">
-        <br>
-        <br>
-        <input type="file" name="file" id="">
-        <input type="submit" name="upload" id="">
-        <br>
-        <br>
 
-        <input type="image">
-        <br>
-        <br>
-        <br>
-        contry
-        <select name="country" id="">
-            <option value="desable">choose your option</option>
-            <option value="">pakistan</option>
-            <option value="">kpk</option>
-            <option value="">panjab</option>
-            <option value="">balochistan</option>
-        </select>
+<h2>STUDENT REGISTRATION FORM</h2>
 
-        <button>submit</button>
+<form action="#" method="post" >
+    <table cellpadding="10" >
+        <tr>
+            <td>FIRST NAME</td>
+            <td><input type="text" name="first_name" maxlength="30" required></td>
+        </tr>
+        <tr>
+            <td>LAST NAME</td>
+            <td><input type="text" name="last_name" maxlength="30" required></td>
+        </tr>
+        <tr>
+            <td>DATE OF BIRTH</td>
+            <td>
+                Day <select name="day" required>
+                    <option value="-1">Day:</option>
+                    <!-- Options for days -->
+                    <option value="1">1</option>
+                    <!-- Repeat for other days -->
+                </select>
+                Month <select name="month" required>
+                    <option value="-1">Month:</option>
+                    <!-- Options for months -->
+                    <option value="January">January</option>
+                    <!-- Repeat for other months -->
+                </select>
+                Year <select name="year" required>
+                    <option value="-1">Year:</option>
+                    <!-- Options for years -->
+                    <option value="2000">2000</option>
+                    <!-- Repeat for other years -->
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>EMAIL ID</td>
+            <td><input type="email" name="email" required></td>
+        </tr>
+        <tr>
+            <td>MOBILE NUMBER</td>
+            <td><input type="text" name="mobile" maxlength="10" required></td>
+        </tr>
+        <tr>
+            <td>GENDER</td>
+            <td>
+                <input type="radio" name="gender" value="Male" required> Male
+                <input type="radio" name="gender" value="Female" required> Female
+            </td>
+        </tr>
+        <tr>
+            <td>ADDRESS</td>
+            <td><textarea name="address" rows="4" cols="30" required></textarea></td>
+        </tr>
+        <tr>
+            <td>CITY</td>
+            <td><input type="text" name="city" maxlength="30" required></td>
+        </tr>
+        <tr>
+            <td>PIN CODE</td>
+            <td><input type="text" name="pincode" maxlength="6" required></td>
+        </tr>
+        <tr>
+            <td>STATE</td>
+            <td><input type="text" name="state" maxlength="30" required></td>
+        </tr>
+        <tr>
+            <td>COUNTRY</td>
+            <td>
+                <select name="country" required>
+                    <option value="India">India</option>
+                    <!-- Add other countries as needed -->
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>HOBBIES</td>
+            <td>
+                <input type="checkbox" name="hobbies" value="Drawing"> Drawing
+                <input type="checkbox" name="hobbies" value="Singing"> Singing
+                <input type="checkbox" name="hobbies" value="Dancing"> Dancing
+                <input type="checkbox" name="hobbies" value="Sketching"> Sketching
+                <input type="checkbox" name="hobbies" value="Others"> Others
+            </td>
+        </tr>
+        <tr>
+            <td>QUALIFICATION</td>
+            <td>
+                <table border="1" cellpadding="5" cellspacing="0">
+                    <tr>
+                        <th>Sl.No.</th>
+                        <th>Examination</th>
+                        <th>Board</th>
+                        <th>Percentage</th>
+                        <th>Year of Passing</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Class X</td>
+                        <td><input type="text" name="class10_board" maxlength="10" required></td>
+                        <td><input type="text" name="class10_percentage" maxlength="5" required></td>
+                        <td><input type="text" name="class10_year" maxlength="4" required></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Class XII</td>
+                        <td><input type="text" name="class12_board" maxlength="10" required></td>
+                        <td><input type="text" name="class12_percentage" maxlength="5" required></td>
+                        <td><input type="text" name="class12_year" maxlength="4" required></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Graduation</td>
+                        <td><input type="text" name="graduation_board" maxlength="10" required></td>
+                        <td><input type="text" name="graduation_percentage" maxlength="5" required></td>
+                        <td><input type="text" name="graduation_year" maxlength="4" required></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Masters</td>
+                        <td><input type="text" name="masters_board" maxlength="10" required></td>
+                        <td><input type="text" name="masters_percentage" maxlength="5" required></td>
+                        <td><input type="text" name="masters_year" maxlength="4" required></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>COURSES APPLIED FOR</td>
+            <td>
+                <input type="radio" name="course" value="BCA" required> BCA
+                <input type="radio" name="course" value="B.Com" required> B.Com
+                <input type="radio" name="course" value="B.Sc" required> B.Sc
+                <input type="radio" name="course" value="B.A" required> B.A
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </td>
+        </tr>
+    </table>
+</form>
 
-        <input type="url">
-        <button>upload</button>
-    </form>
 </body>
 </html>
